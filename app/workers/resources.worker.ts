@@ -24,7 +24,7 @@ async function registerJobs() {
       triggeredAt: new Date().toISOString(),
     },
     {
-      repeat: { pattern: SYNC.minute },
+      repeat: { pattern: SYNC.daily },
       jobId: "resource-sync",
     },
   );
